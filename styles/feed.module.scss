@@ -1,0 +1,41 @@
+.post {
+	margin: 20px 0;
+	padding: 20px;
+	width: 500px;
+	border-bottom: 1px solid black;
+	transition: background-color 0.3s;
+	&:hover {
+		background-color: #fefefe;
+	}
+	h2 {
+		font-size: 20px;
+		cursor: pointer;
+		text-align: center;
+	}
+
+	img {
+		max-width: 100%;
+		width: 100%;
+	}
+}
+
+.paginator {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+	div {
+		margin: 25px;
+		cursor: pointer;
+		padding: 4px 8px;
+		&.active {
+			transition: 0.3s all;
+			&:hover{
+				transform: scale(1.2);
+			}
+		}
+	}
+	.disabled{
+		color: rgb(190, 190, 190);
+		cursor: not-allowed;
+	}
+}

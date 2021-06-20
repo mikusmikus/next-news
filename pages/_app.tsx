@@ -1,7 +1,14 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import "../styles/globals.scss";
+import type { AppProps } from "next/app";
+import Toolbar from "../components/toolbar";
 
+// here can use global providers/ state etc
 function MyApp({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+	return (
+		<>
+			<Toolbar />
+			<Component {...pageProps} />
+		</>
+	);
 }
-export default MyApp
+export default MyApp;
