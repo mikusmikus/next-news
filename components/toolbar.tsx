@@ -12,6 +12,9 @@ const Toolbar = () => {
 			<Link href='/feed/1'>
 				<a> Feed</a>
 			</Link>
+			<Link href='/characters'>
+				<a> characters</a>
+			</Link>
 			<Link href='/eom'>
 				<a> EOM</a>
 			</Link>
