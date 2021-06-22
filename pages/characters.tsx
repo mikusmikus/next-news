@@ -10,7 +10,7 @@ const Characters = ({ characters }: any) => {
 			<div className={styles.cardWrapper}>
 				{characters.map((character: any, index: number) => {
 					return (
-						<Link key={index} href="/character/[id]" as={`/character/${character.id}`} >
+						<Link key={index} href="/characters/[id]" as={`/characters/${character.id}`} >
 							<a className={styles.card}>
 							<h3>{character.name}</h3>
 							<img src={character.image} alt={character.name} />

@@ -25,7 +25,6 @@ export const getStaticProps = async (context: any) => {
 		`https://rickandmortyapi.com/api/character/${id}`
 	);
 	const data = await response.json();
-	console.log("data", data);
 
 	return {
 		props: {
@@ -39,8 +38,12 @@ export const getStaticPaths = async () => {
 	const { results } = await response.json();
 
 	const ids = results.map((res: any) => res.id);
-	const paths = ids.map((id: number) => ({ params: { id: id.toString() } }));
-	console.log(paths);
+	// const paths = ids.map((id: number) => ({ params: { id: id.toString() } }));
+
+	const paths = results.map((res: any) => ({
+		params: {id: res.id.toString()}
+	}))
+
 
 	// output need to be
 	// paths : [
