@@ -74,6 +74,7 @@ export default function Home() {
         <h2>hello1 somethiunbg here</h2>
         <h4>hehehe here</h4>
         <img src="https://picsum.photos/200/300" alt="" width={333} height={233} />
+        <img src="https://picsum.photos/440/300" alt="" width={333} height={233} />
       </div>
     </div>
     </div>
