@@ -68,6 +68,7 @@ export default function Home() {
     <div className="container">
       <div className={styles.main}>
         <h1>Next.js News app</h1>
+        <h2>Title</h2>
         <h5>some content here</h5>
         <h6>something here</h6>
       </div>
