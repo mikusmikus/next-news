@@ -70,7 +70,7 @@ export default function Home() {
         <h1>Next.js News app</h1>
         <h2>Title</h2>
         <h5>some content here</h5>
-        <h6>something here</h6>
+        <h3>something here</h3>
       </div>
     </div>
     </div>
