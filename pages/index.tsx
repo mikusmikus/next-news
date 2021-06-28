@@ -71,7 +71,8 @@ export default function Home() {
         <h2>Title</h2>
         <h5>some content here</h5>
         <h3>something here</h3>
-        <h2>hello1</h2>
+        <h2>hello1 somethiunbg here</h2>
+        <h4>hehehe here</h4>
       </div>
     </div>
     </div>
