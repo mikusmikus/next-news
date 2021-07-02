@@ -85,9 +85,10 @@ export const getServerSideProps = async (context: any) => {
 	}
 
 	const URL = `https://newsapi.org/v2/top-headlines?country=us&pageSize=5&page=${pageNumber}&apiKey=`;
+	const API_KEY = "1968fe7efb354d0ca3597a81ad1d13de"
 
 	const response = await axios.get(
-		`${URL}${process.env.NEXT_PUBLIC_MY_API_KEY}`
+		`${URL}${API_KEY}`
 	);
 
 	const { articles } = response.data;

@@ -1,8 +1,11 @@
 const feature1 = () => {
 	return (
-		<div>
-			Feature1
-		</div>
+		<>
+			<div>
+				Feature1
+			</div>
+			<h1>Hello world</h1>
+		</>
 	);
 }
 
