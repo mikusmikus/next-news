@@ -1,19 +1,22 @@
 import Link from "next/link";
 import React from "react";
-import styles from "../styles/characters.module.scss";
+import styles from "../../styles/characters.module.scss";
+import Image from 'next/image'
 
 const Characters = ({ characters }: any) => {
-	// console.log(characters);
+	console.log(characters);
 
 	return (
 		<div className='container'>
+			<h1 className={styles.title} >This is Characters page</h1>
 			<div className={styles.cardWrapper}>
 				{characters.map((character: any, index: number) => {
 					return (
 						<Link key={index} href="/characters/[id]" as={`/characters/${character.id}`} >
 							<a className={styles.card}>
 							<h3>{character.name}</h3>
-							<img src={character.image} alt={character.name} />
+							<Image src={character.image} alt={character.name} width={300} height={300} layout="responsive"/>
+							{/* <img src={character.image} alt={character.name} /> */}
 							</a>
 						</Link>
 					);

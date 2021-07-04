@@ -36,3 +36,114 @@ h1 {
   }
 }
 
+.image-style{
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+.title{
+  width: 100%;
+  background-color: orange;
+}
+.grid {
+  width: 100%;
+  display: grid;
+  min-height: 80vh;
+  // grid-template-columns: 70% 30%;
+  // grid-auto-flow: column;
+  // grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 1.5fr 3fr 0.8fr;
+  // gap: 1em;
+  grid-template-areas:
+  "box1 box1 box1 box1"
+  "box2 box3 box3 box3"
+  "box2 box4 box5 box6"
+  "box2 box7 box7 box7";
+  grid-column-gap: 10px;
+  grid-row-gap: 25px;
+  div{
+    // background-color: aquamarine;
+    padding: 10px;
+    h1{
+      margin: 10px 0;
+    }
+  }
+  // @media( max-width : 991px) {
+  //     grid-template-columns: 2fr 1fr;
+  //     grid-auto-flow: row;
+  //   }
+  //   @media( max-width : 600px) {
+  //     grid-template-columns: none;
+  //     grid-auto-flow: row;
+  // }
+}
+.box1{
+  // where starts box. where ends it, start @ 2nd, ends before 4
+  // grid-column: 1 / 4;  // grid-column-starts 1, grid-column-ends-4
+  // grid-row: 1 / 2;
+  // grid-column-end: 4;
+  background: #cecece;
+  grid-area: box1;
+}
+.box2{
+  // grid-column: 1 / 3;
+  // grid-row: 2 / 4;
+  background-color: rgb(197, 164, 74);
+  grid-area: box2;
+}
+.box3{
+  // grid-column: 2 / 4;
+  // grid-row: 4 / 6;
+  background-color: rgb(139, 216, 146);
+  grid-area: box3;
+}
+.box4{
+  // grid-column: 1 / 2;
+  // grid-row: 4 / 9;
+  background-color: rgb(86, 64, 107);
+  grid-area: box4;
+}
+.box5{
+  // grid-column: 3 / 4;
+  // grid-row: 6 / 14;
+  background: lightgreen;
+  grid-area: box5;
+}
+.box6{
+  background-color: blueviolet;
+  grid-area: box6;
+}
+.box7{
+  background-color: rgb(188, 226, 139);
+  grid-area: box7;
+}
+
+    @media( max-width : 990px) {
+      .grid {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.2fr 0.5fr 1fr 0.8fr 0.3fr;
+        grid-template-areas:
+        "box1 box1 box1"
+        "box2 box3 box3"
+        "box2 box4 box5"
+        "box2 box6 box6"
+        "box2 box7 box7"
+      }
+  }
+    @media( max-width : 600px) {
+      .grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.2fr 0.2fr 2fr 1fr 1fr 1fr;
+        grid-template-areas:
+        "box1"
+        "box2"
+        "box3"
+        "box5"
+        "box7"
+        "box6";
+        .box4{
+          display: none;
+        }
+      }
+  }
