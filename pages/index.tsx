@@ -94,8 +94,10 @@ export default function Home() {
           </div>
           <div className="box6">
             <h1>Box6</h1>
+            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum harum veritatis dolore et nemo modi magnam atque vitae ipsum? Culpa.</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sed ea molestiae at rem ullam sequi odio eius dignissimos delectus.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, hic.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quo fugiat aperiam laborum facere tempore, ipsam id accusantium eligendi saepe sit. Earum accusantium officia a hic, dolorem quaerat provident vero?</p>
           </div>
           <div className="box7">
             <h1>Box7</h1>
@@ -106,8 +108,12 @@ export default function Home() {
         <Image alt="Vercel logo" src={vercel} layout="fill"/>
         </div>
         <h1>Next.js News app</h1>
-        <Image alt="test image" src="/testImage.jpg" width={500} height={300} priority  layout="responsive" />
+        <div>
+        <Image alt="test image" src="/testImage.jpg" width={500} height={300} priority   />
+        </div>
+        <div>
         <Image alt="Vercel logo" src="https://picsum.photos/200/300" width={200} height={300} />
+        </div>
 
         <Image
         alt="Next.js logo"

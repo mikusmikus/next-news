@@ -18,8 +18,8 @@ const Toolbar = () => {
 			<Link href='/eom'>
 				<a> EOM</a>
 			</Link>
-			<Link href='https://twitter.com/home'>
-				<a> Twitter</a>
+			<Link href='/grid-test'>
+				<a> Grid Test</a>
 			</Link>
 		</div>
 	);
