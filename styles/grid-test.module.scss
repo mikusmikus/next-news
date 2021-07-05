@@ -1,0 +1,47 @@
+.pageGrid{
+	display: grid;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1.2fr 1.5fr;
+	
+	// min contet grid size only text size 
+	grid-template-rows: 1fr 5fr min-content auto;
+	box-sizing: border-box;
+	// grid-column-gap: 10px;
+	// grid-row-gap: 25px;
+	min-height: calc(100vh - 100px);
+	
+
+}
+.main {
+	// grid-column-start: 1;
+	// grid-column-end: 3;
+	// grid-row-start: 1;
+	// grid-row-end: 3;
+	//shortcut  row start/column start/ row end/ column end
+	grid-area: 1 / 1 / 3 / 3;
+	background-color: lightcoral;
+}
+.header{
+	grid-area: 1 / 3 / 2 / -1;
+	background-color: lightcyan;
+}
+.nom{
+	grid-area: 3 / 1 / 4 / 2;
+	background-color: lightgreen;
+}
+.yom {
+	grid-area: 3 / 2 / 4 / 3;
+	background-color: lightgrey;
+}
+
+.dom{
+	grid-area: 4 / 1 / 5 / 3;
+	background-color: rgb(221, 102, 102);
+}
+.bgImage{
+	grid-area: 2 / 3 / 5 / 4;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-image: url('https://archziner.com/wp-content/uploads/2020/07/air-jordan-hoodie-worn-by-man-wearing-purge-mask-with-neon-lights-super-cool-wallpapers-holding-pink-smoke-bomb.jpg');
+}

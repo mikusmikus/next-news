@@ -1,6 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
+import vercel from '../public/vercel.svg'
 import styles from '../styles/Home.module.scss'
+
 
   // export const getServerSideProps = () => {
   //   console.log(process.env.SECRET_VARIABLE)
@@ -67,17 +69,61 @@ export default function Home() {
       </Head>
     <div className="container">
       <div className={styles.main}>
+        <Image alt="Vercel logo" src="/vercel.svg" width={100} height={30} priority/>
+        <h1 className="title"> This is title</h1>
+        <div className="grid">
+          <div className="box1">
+            <h1>Box1</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, hic.</p>
+          </div>
+          <div className="box2">
+            <h1>Box2</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, hic.</p>
+          </div>
+          <div className="box3">
+            <h1>Box3</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, hic.</p>
+          </div>
+          <div className="box4">
+            <h1>Box4</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, hic.</p>
+          </div>
+          <div className="box5">
+            <h1>Box5</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, hic.</p>
+          </div>
+          <div className="box6">
+            <h1>Box6</h1>
+            <h2>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cum harum veritatis dolore et nemo modi magnam atque vitae ipsum? Culpa.</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit sed ea molestiae at rem ullam sequi odio eius dignissimos delectus.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, hic.</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Omnis quo fugiat aperiam laborum facere tempore, ipsam id accusantium eligendi saepe sit. Earum accusantium officia a hic, dolorem quaerat provident vero?</p>
+          </div>
+          <div className="box7">
+            <h1>Box7</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, hic.</p>
+          </div>
+        </div>
+        <div className="image-style">
+        <Image alt="Vercel logo" src={vercel} layout="fill"/>
+        </div>
         <h1>Next.js News app</h1>
-        <h2>Title</h2>
-        <h5>some content here</h5>
-        <h3>something here</h3>
-        <h2>hello1 somethiunbg here</h2>
-        <h4>hehehe here</h4>
-        <img src="https://picsum.photos/200/300" alt="" width={333} height={233} />
-        <img src="https://picsum.photos/440/300" alt="" width={333} height={233} />
+        <div>
+        <Image alt="test image" src="/testImage.jpg" width={500} height={300} priority   />
+        </div>
+        <div>
+        <Image alt="Vercel logo" src="https://picsum.photos/200/300" width={200} height={300} />
+        </div>
+
+        <Image
+        alt="Next.js logo"
+        src="https://assets.vercel.com/image/upload/v1538361091/repositories/next-js/next-js-bg.png"
+        width={1200}
+        height={400}
+      />
       </div>
     </div>
-    </div>
+    </div> 
   )
 }
 
