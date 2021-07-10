@@ -5,7 +5,19 @@ import styles from "../styles/toolbar.module.scss";
 const Toolbar = () => {
 	const router = useRouter();
 	return (
+		<>
 		<div className={styles.main}>
+		<div className={styles.languages}>
+		<Link href='/' locale="en">
+				<a> en</a>
+			</Link>
+		<Link href='/' locale="fr">
+				<a> fr</a>
+			</Link>
+		<Link href='/' locale="no">
+				<a> no</a>
+			</Link>
+		</div>
 			<Link href='/'>
 				<a> home</a>
 			</Link>
@@ -21,7 +33,11 @@ const Toolbar = () => {
 			<Link href='/grid-test'>
 				<a> Grid Test</a>
 			</Link>
+			<Link href='/languages'>
+				<a>Languages</a>
+			</Link>
 		</div>
+		</>
 	);
 };
 

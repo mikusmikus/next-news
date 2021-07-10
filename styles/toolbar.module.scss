@@ -19,4 +19,11 @@
 			color: rgb(168, 168, 168);
 		}
 	}
+	.languages{
+		display: flex;
+		flex-direction: column;
+		a{
+			font-size: 15px;
+		}
+	}
 }
