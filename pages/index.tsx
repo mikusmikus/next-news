@@ -1,6 +1,5 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import vercel from '../public/vercel.svg'
 import styles from '../styles/Home.module.scss'
 
 
@@ -105,7 +104,7 @@ export default function Home() {
           </div>
         </div>
         <div className="image-style">
-        <Image alt="Vercel logo" src={vercel} layout="fill"/>
+        {/* <Image alt="Vercel logo" src={vercel} layout="fill"/> */}
         </div>
         <h1>Next.js News app</h1>
         <div>
