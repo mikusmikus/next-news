@@ -4,17 +4,18 @@ import styles from "../styles/toolbar.module.scss";
 
 const Toolbar = () => {
 	const router = useRouter();
+	
 	return (
 		<>
 		<div className={styles.main}>
 		<div className={styles.languages}>
-		<Link href='/' locale="en">
+		<Link href="" locale="en">
 				<a> en</a>
 			</Link>
-		<Link href='/' locale="fr">
+		<Link href="" locale="fr">
 				<a> fr</a>
 			</Link>
-		<Link href='/' locale="no">
+		<Link href="" locale="no">
 				<a> no</a>
 			</Link>
 		</div>

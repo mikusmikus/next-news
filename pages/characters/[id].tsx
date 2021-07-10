@@ -53,6 +53,7 @@ export const getStaticPaths = async () => {
 
 	return {
 		paths,
+		// can use this with multiple languages
 		fallback: false,
 	};
 };
