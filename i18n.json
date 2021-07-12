@@ -1,0 +1,9 @@
+{
+    "locales": ["en", "fr", "no"],
+    "defaultLocale": "en",
+    "localeDetection": false,
+    "pages": {
+        "*": ["navLinks"],
+        "/languages": ["languagePage"]
+      }
+}

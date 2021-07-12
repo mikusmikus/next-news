@@ -1,10 +1,16 @@
 import axios from 'axios'
+import useTranslation from 'next-translate/useTranslation';
 import Link from 'next/link';
 import React from 'react';
 
 const Languages = ({data}: any) => {
+
+	const { t } = useTranslation('languagePage');
+	const title = t('title')
 	
 	return (
+		<>
+		<h1>{title}</h1>
 		<ul>
 			{data && data.map((el:any) => 
 		<li key={el.id}>
@@ -16,6 +22,7 @@ const Languages = ({data}: any) => {
 		</li>
 				)}
 		</ul>
+		</>
 	);
 }
 

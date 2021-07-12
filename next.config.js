@@ -1,6 +1,7 @@
 const withImages = require("next-images");
+const nextTranslate = require('next-translate')
 
-module.exports = withImages({
+module.exports = nextTranslate({
 	images: {
 		domains: [
 			"assets.vercel.com",
@@ -9,12 +10,16 @@ module.exports = withImages({
 			"pbs.twimg.com",
 		],
 	},
-	webpack(config, options) {
+	webpack(config, { isServer, webpack }) {
 		return config;
 	},
-	i18n: {
-		locales: ["en", "fr", "no"],
-		defaultLocale: "en",
-        localeDetection: false,
-	},
+
+	// i18n: {
+	// 	locales: ["en", "fr", "no"],
+	// 	defaultLocale: "en",
+    //     localeDetection: false,
+	// 	pages: {
+	// 		"*": ["common"]
+	// 	  }
+	// },
 });
